@@ -122,15 +122,16 @@
 			var $cameTo = $("#name").val() + " came to General Asssembly to " + $("#verb-1").val() + " the great mountain of programming knowledge. ";
 				$(".container.results").append($cameTo);
 
-			var $mission = "'" + $("#mission").val() + "', " + $("#name").val() + " shouted. ";
-				$(".container.results").append($mission);
+			var $shout = "'" + $("#mission").val() + "', " + $("#name").val() + " shouted. ";
+				$(".container.results").append($shout);
 
-			var $sentiment = "Though " + $("#radio1").val() + ", " + $("#name").val() + " was able to overcome all obstacles with the power of their " + $("#noun-1").val() + ". ";
-				$(".container.results").append($sentiment);
+			var $though = "Though " + $("#radio1").val() + ", " + $("#name").val() + " was able to overcome all obstacles with the power of their " + $("#noun-1").val() + ". ";
+				$(".container.results").append($though);
 
-			var $inTheEnd = "In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + $("noun-2).val() + ".";	
+			var $inTheEnd = "In the end, their success can be contributed entirely to their " + $("#check1").val() + ", " + $("#check2").val() + ", " + $("#check3").val() + $("#noun-2").val() + ".";
+				$(".container.results").append($inTheEnd);
 
-		    // Stop the form from submitting
+			// Stop the form from submitting
 	    	// Append the new <section> created above.
 
 	    	/*
