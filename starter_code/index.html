@@ -34,7 +34,7 @@
 				    	</select>
 					</div>
 					<div class="row formGroup">
-				    	<label for="mission">Misison Statement:</label>
+				    	<label for="mission">Mission Statement:</label>
 				    	<textarea id="mission" name="mission"></textarea>
 					</div>
 
@@ -116,13 +116,21 @@
 			event.preventDefault();
 			makeResults();
 
-			var $onceUpon = "Once upon a time there was a Developer named" + $("#name").val() + ".";
-			console.log($onceUpon);
-			$("container.results").append($onceUpon);
-			
-	    
-		    // Stop the form from submitting
+			var $onceUpon = "Once upon a time there was a Developer named " + $("#name").val() + ". ";
+				$(".container.results").append($onceUpon);
 
+			var $cameTo = $("#name").val() + " came to General Asssembly to " + $("#verb-1").val() + " the great mountain of programming knowledge. ";
+				$(".container.results").append($cameTo);
+
+			var $mission = "'" + $("#mission").val() + "', " + $("#name").val() + " shouted. ";
+				$(".container.results").append($mission);
+
+			var $sentiment = "Though " + $("#radio1").val() + ", " + $("#name").val() + " was able to overcome all obstacles with the power of their " + $("#noun-1").val() + ". ";
+				$(".container.results").append($sentiment);
+
+			var $inTheEnd = "In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + $("noun-2).val() + ".";	
+
+		    // Stop the form from submitting
 	    	// Append the new <section> created above.
 
 	    	/*
