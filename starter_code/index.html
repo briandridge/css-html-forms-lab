@@ -112,9 +112,15 @@
 
 		*/
 
-
 		$("form").on("submit", function(event){
+			event.preventDefault();
+			makeResults();
 
+			var $onceUpon = "Once upon a time there was a Developer named" + $("#name").val() + ".";
+			console.log($onceUpon);
+			$("container.results").append($onceUpon);
+			
+	    
 		    // Stop the form from submitting
 
 	    	// Append the new <section> created above.
