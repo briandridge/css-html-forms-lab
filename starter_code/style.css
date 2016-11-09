@@ -1,6 +1,7 @@
 /*-------- Utility Styles --------*/
 * {
 	box-sizing: border-box; 
+	padding: 2px;
 	/*border: 1px solid black;*/
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
@@ -33,6 +34,7 @@ h1 {
 .formSection {
 	float: left;
 	background: #E3E6EC;
+
 	border-radius: 5px;
 }
 
@@ -59,18 +61,43 @@ button {
 
 /*-------- Form Styles --------*/
 
+form {
+	width: 100%;
+	max-width: 500px;
+}
+
+.row {
+	margin: 2px;
+}
+
+.formGroup {
+	width: 100%;
+	display: inline-block;
+}
+
+label {
+	display: block;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	/*float: left;*/
+}
+
+input {
+	float: left;
+
+}
 
 /* 
 
-	Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
+	ok Make sure the form itself fills the width of whatever container its in, but no larger than 500px.
 	
-	The background should be #E3E6EC, and it should align to the middle of its container.
+	almost ok The background should be #E3E6EC, and it should align to the middle of its container.
 	
-	Every element should have nice, even padding or margin around it.
+	ok Every element should have nice, even padding or margin around it.
 
-	.row elements should be spaced out so they're not touching.
+	ok .row elements should be spaced out so they're not touching.
 
-	.formGroup elements should fill the width of their container, and be inline-block.
+	ok .formGroup elements should fill the width of their container, and be inline-block.
 
 	The labels inside of .formGroup should be on their own line above form options, 
 	fill the width of their container, and have top/bottom padding.
