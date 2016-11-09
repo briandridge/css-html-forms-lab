@@ -1,8 +1,21 @@
 /*-------- Utility Styles --------*/
 * {
 	box-sizing: border-box; 
+	/*border: 1px solid black;*/
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+}
+
+body {
+	font-family: 'Proza Libre', Arial, sans-serif;
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 700;
+	/* ??? justify-content: space-between;*/
+
 }
 
 /* 
@@ -12,6 +25,29 @@
 */
 
 /*-------- Main Styles --------*/
+
+#main {
+	width: 100%;
+}
+
+.formSection {
+	float: left;
+	background: #E3E6EC;
+	border-radius: 5px;
+}
+
+/*.results {
+	float: left;
+}
+*/
+
+.container {
+	border-radius: 5px;
+}
+
+button {
+	border-radius: 5px;
+}
 
 /* 
 	Make the main container the full width of the page.
@@ -36,13 +72,16 @@
 
 	.formGroup elements should fill the width of their container, and be inline-block.
 
-	The labels inside of .formGroup should be on their own line above form options, fill the width of their container, and have top/bottom padding.
+	The labels inside of .formGroup should be on their own line above form options, 
+	fill the width of their container, and have top/bottom padding.
 
 	Radio buttons and checkbox options should each be on their own line, and indented a little. 
 
-	Radio buttons and checkbox labels should be directly to the right of their corresponding inputs, and the text should vertically align with the inputs. 
+	Radio buttons and checkbox labels should be directly to the right of their corresponding inputs, 
+	and the text should vertically align with the inputs. 
 
-	Text inputs, submit buttons, and select boxes should all be at least 48px tall. The should have 14px of padding around their text. 
+	Text inputs, submit buttons, and select boxes should all be at least 48px tall. 
+	The should have 14px of padding around their text. 
 
 	Textareas should be at least 100px tall.
 
